@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>First Read — Matthew Strong</title>
+  <meta name="description" content="Independent product concept: an AI first read for workers compensation new business. The underwriter still decides.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site">
+    <div class="bar">
+      <a class="brand" href="/">Matthew Strong</a>
+      <nav>
+        <a href="/#work">Work</a>
+        <a href="/work/ai-realism.html">AI Realism</a>
+        <a href="/work/copilot-upgrades.html">Upgrades</a>
+        <a href="mailto:matthewlstrong@gmail.com">Email</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <p class="kicker">Case study · workers’ compensation</p>
+    <div class="narrow">
+      <h1>First Read</h1>
+      <p class="sub">A brief on every new-business submission. The underwriter still decides.</p>
+      <div class="callout">Independent product concept and working prototype. Not affiliated with CopperPoint, and not an engagement, pilot, or shipped company product. Illustrative files only. Nothing writes to a policy system.</div>
+      <h2>Problem</h2>
+      <p>When an agent sends a new workers’ compensation submission, a large share of underwriting time goes to legwork before a decision can start: governing class, payroll mix, three-year losses, experience mod, appetite. Speed of response depends on a mental snapshot in minutes, built from information the agent often did not assemble.</p>
+      <h2>Product</h2>
+      <p>First Read is not a chatbot. It is a sourced brief. The system reads the documents on the file and returns a snapshot of operations, exposure, experience, hazards, appetite, open questions, and a recommended action. Target: on the underwriter’s desk in under 90 seconds. Every line cites a source. Uncertainty stays visible. The model does not quote, bind, or email a producer.</p>
+      <p><a href="https://copperpoint-wc-underwriting-ai.grok.me/desk">Open the desk prototype</a>. The public build shows an Arizona new-business file with Quote, Refer, and Decline. The spec covers four illustrative files: an in-appetite Phoenix fabricator, a New Mexico framer with an open fall, California roofing out of appetite, and an STP-eligible Mesa HVAC shop.</p>
+      <h2>Guardrails</h2>
+      <ul class="clean">
+        <li>Appetite is the carrier’s, not the model’s.</li>
+        <li>Overrides are captured for guideline review. They are not silent retraining.</li>
+        <li>Human in the loop on every decision that leaves the desk.</li>
+        <li>Not a rating engine. Not a producer tool. Not live accounts.</li>
+      </ul>
+      <h2>Roadmap</h2>
+      <table>
+        <thead><tr><th>Horizon</th><th>Scope</th><th>Measure</th></tr></thead>
+        <tbody>
+          <tr><td>H0 · Q4 2026</td><td>A brief on every Arizona new-business file. Pilot with eight underwriters.</td><td>Time to first action.</td></tr>
+          <tr><td>H1 · Q1–Q2 2027</td><td>Appetite scoring, completeness, producer follow-up drafts owned by the underwriter. Expand to CA, CO, NM, NV, UT.</td><td>Completeness of the file before the first producer touch.</td></tr>
+          <tr><td>H2 · H2 2027</td><td>Straight-through processing only for qualified small business. Production underwriters stay on stretch and out-of-appetite work.</td><td>Share of eligible small accounts cleared without a full desk review.</td></tr>
+        </tbody>
+      </table>
+      <h2>What I would hold the model to</h2>
+      <p>A demo that looks right is not the bar. The eval set has to say what “good enough” means before launch: cited fields match the source document, uncertainty is labeled when the loss run or class is incomplete, and a recommended decline does not fire on an in-appetite risk. Time to first action is the pilot metric, against a manual first pass. Failures stay visible. They do not get absorbed into a retrain.</p>
+    </div>
+  </main>
+  <footer class="site">
+    <div class="bar">
+      <span>Independent prototype. Not a CopperPoint product.</span>
+      <a href="/">Back</a>
+    </div>
+  </footer>
+</body>
+</html>
